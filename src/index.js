@@ -5,14 +5,14 @@ import "./styles.css";
 const arr = ["A", "B", "C", "D"];
 
 const dispArr = arr => {
-  return arr.map(item => "<div>" + item + "</div>")
+  return arr.map(item => "<div>" + item + "</div>");
 };
 
 console.log(dispArr(arr));
 
 // 2. 신규 추가 기능 (간단)
 const dispArr2 = arr => {
-  return arr.map(item => '<div>${item}</div>');
+  return arr.map(item => `<div>${item}</div>`);
 };
 
 console.log(dispArr2(arr));
